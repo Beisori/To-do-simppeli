@@ -1,7 +1,8 @@
 let lisaaTehtavaNappi = document.getElementById('lisaaTehtava');
 let tehtavaKentta = document.getElementById('tehtavaKentta');
 let tekstiKentta = document.getElementById('tekstiKentta');
-let minimiPituus = 4;
+let minimiPituus = 5;
+
 
 tekstiKentta.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
@@ -10,7 +11,7 @@ tekstiKentta.addEventListener("keypress", function (event) {
         paragraph.classList.add('paragraph-styling')
         paragraph.innerText = tekstiKentta.value;
         if (!tekstiKentta.value) {
-            tekstiKentta.classList.add("error-text");            
+            tekstiKentta.classList.add("error-text");
             alert("Tekstikenttä tyhjä. Lisää kenttään tehtäväsi!");
             return;
         }
@@ -19,9 +20,9 @@ tekstiKentta.addEventListener("keypress", function (event) {
             alert("Liian lyhyt teksti!");
             return;
         }
+        tekstiKentta.classList.remove("error-text");
         tehtavaKentta.appendChild(paragraph);
         tekstiKentta.value = "";
-
         paragraph.addEventListener('click', function () {
             paragraph.style.textDecoration = "line-through";
         })
@@ -35,16 +36,17 @@ lisaaTehtavaNappi.addEventListener('click', function () {
     var paragraph = document.createElement('p')
     paragraph.classList.add('paragraph-styling')
     paragraph.innerText = tekstiKentta.value;
-    console.log(tekstiKentta.value.length);
     if (!tekstiKentta.value) {
         tekstiKentta.classList.add("error-text");
         alert("Tekstikenttä tyhjä. Lisää kenttään tehtäväsi!");
         return;
     }
-    if (tekstiKentta.value.length < 3) {
+    if (tekstiKentta.value.length < minimiPituus) {
+        tekstiKentta.classList.add("error-text");
         alert("Liian lyhyt teksti!");
         return;
     }
+    tekstiKentta.classList.remove("error-text");
     tehtavaKentta.appendChild(paragraph);
     tekstiKentta.value = "";
     paragraph.addEventListener('click', function () {
