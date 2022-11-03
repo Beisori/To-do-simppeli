@@ -2,7 +2,7 @@ html,
 body {
     width: 50%;
     margin: 0 auto;
-    font-family:'Fira sas', sans-serif ;
+    font-family: 'Fira sas', sans-serif;
     background-color: slategrey;
 }
 
@@ -44,20 +44,19 @@ body {
     color: red !important;
 }
 
-.lisaaTehtava .actions button {
+#lisaaTehtava {
     cursor: pointer;
-    margin: 0 0,5rem;
-    font-size: 1,2rem;
+    margin: 0 0, 5rem;
+    font-size: 1, 2rem;
     font-weight: 300;
-    text-transform: uppercase;
-    transition: 0,4s;
+    transition: 0, 4s;
 }
 
-.lisaaTehtava .actions button:hover {
+#lisaaTehtava:hover {
     opacity: 0.9;
 }
 
-.lisaaTehtava .actions button:active {
+#lisaaTehtava:active {
     opacity: 0.5;
 }
 
