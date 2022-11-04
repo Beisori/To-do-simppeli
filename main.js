@@ -1,8 +1,7 @@
-let lisaaTehtavaNappi = document.getElementById('lisaaTehtava');
-let tehtavaKentta = document.getElementById('tehtavaKentta');
-let tekstiKentta = document.getElementById('tekstiKentta');
-let minimiPituus = 4;
-
+var lisaaTehtavaNappi = document.getElementById('lisaaTehtava');
+var tehtavaKentta = document.getElementById('tehtavaKentta');
+var tekstiKentta = document.getElementById('tekstiKentta');
+var minimiPituus = 4;
 
 tekstiKentta.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
