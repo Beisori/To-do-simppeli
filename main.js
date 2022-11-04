@@ -23,7 +23,7 @@ tekstiKentta.addEventListener("keypress", function (event) {
         tehtavaKentta.appendChild(paragraph);
         tekstiKentta.value = "";
         paragraph.addEventListener('click', function () {
-            paragraph.style.textDecoration = "line-through";
+            paragraph.classList.toggle("line-through");
         })
         paragraph.addEventListener('dblclick', function () {
             tehtavaKentta.removeChild(paragraph);
@@ -49,7 +49,7 @@ lisaaTehtavaNappi.addEventListener('click', function () {
     tehtavaKentta.appendChild(paragraph);
     tekstiKentta.value = "";
     paragraph.addEventListener('click', function () {
-        paragraph.style.textDecoration = "line-through";
+        paragraph.classList.toggle("line-through");
     })
     paragraph.addEventListener('dblclick', function () {
         tehtavaKentta.removeChild(paragraph);
