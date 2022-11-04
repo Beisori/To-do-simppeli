@@ -1,11 +1,15 @@
 # To-do lista
 
 
-## Description
+## Selitys
 
-An in-depth paragraph about your project and overview of use.
+Simppeli to-do lista. 
+Klikkaamalla lisättyä riviä yliviivaat sen.
+Tuplaklikkaamalla poistat sen.
 
-## Authors
+Emme saaneet localstoragea toimimaan ilman että olisimme kopioineet suoraan valmiin pohjan eräästä tutorial-videosta.
+
+## Tekijät
 
 [@Toni Le](https://github.com/Beisori)
 
