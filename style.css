@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    width: 420px;
+    width: 400px;
 }
 
 #tekstiKentta {
@@ -21,7 +21,7 @@ body {
 }
 
 #lisaaTehtava {
-    width: 80px;
+    width: 100px;
     height: 49px;
     border: 1px solid black;
     vertical-align: middle;
